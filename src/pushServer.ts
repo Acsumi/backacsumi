@@ -21,7 +21,7 @@ interface PushSubscription {
 // Función para enviar notificaciones push
 export function sendPush(pushSubscription: PushSubscription, message: string) {
   const payload = JSON.stringify({
-    title: 'Vamos joven',
+    title: 'Anime Acsumi',
     body: message,
   });
 

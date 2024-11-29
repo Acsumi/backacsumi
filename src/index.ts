@@ -109,9 +109,9 @@ app.post('/post_passwords', async (req: Request, res: Response) => {
     // Crear la nueva contraseña asociada al usuario
     const nuevaPassword = new Password({ nombre, tipo_elemento, url, password, userId });
     await nuevaPassword.save();
-    res.status(201).json({ message: 'Contraseña guardada exitosamente', data: nuevaPassword });
+    res.status(201).json({ message: 'anime guardado exitosamente', data: nuevaPassword });
   } catch (error) {
-    res.status(500).json({ message: 'Error al guardar la contraseña.', error });
+    res.status(500).json({ message: 'Error al guardar el anime.', error });
   }
 });
 
